@@ -1,0 +1,149 @@
+sakshee@sakshee-Vostro-3580:~/TE Sem 2/SL5$ g++ Pass1Assembler.cpp
+sakshee@sakshee-Vostro-3580:~/TE Sem 2/SL5$ ./a.out
+
+
+	=====================================
+		MOT TABLE
+	=====================================
+	STOP	00	01	IS	0
+	ADD	01	02	IS	2
+	SUB	02	02	IS	2
+	MULT	03	02	IS	2
+	MOVER	04	03	IS	2
+	MOVEM	05	04	IS	2
+	COMP	06	01	IS	2
+	BC	07	02	IS	2
+	DIV	08	02	IS	2
+	READ	09	01	IS	1
+	PRINT	10	01	IS	1
+	START	01	0	AD	0/1 
+	ORIGIN	02	0	AD	1
+	LTORG	03	0	AD	0
+	END	04	0	AD	0/1
+	EQU	05	0	AD	1
+	DC	01	1	DL	1
+	DS	02	-	DL	1
+					
+	=====================================
+
+
+	CHOOSE FILENAME : 
+	(1) pass1Code1.txt
+	(2) pass1Code2.txt
+	(3) EXIT
+	YOUR CHOICE : 1
+
+	START 100
+
+	ADD AREG A
+
+	BC LT XYZ
+
+	SUB BREG C
+
+	SUB AREG B
+
+	STOP
+
+	=====================================
+		RESULT
+	=====================================
+	-	(AD, 01)	-	(C, 100)
+				
+	100	(IS, 01)	(r, 01)	(S, 0)
+	101	(IS, 07)	(cc, 01)	(S, 1)
+	102	(IS, 02)	(r, 02)	(S, 2)
+	103	(IS, 02)	(r, 01)	(S, 3)
+	104	(IS, 00)		
+
+	=====================================
+
+		SYMBOL TABLE
+	=====================================
+	0	A
+	1	XYZ
+	2	C
+	3	B
+
+	=====================================
+
+		LITERAL TABLE
+	=====================================
+
+	=====================================
+
+	CHOOSE FILENAME : 
+	(1) pass1Code1.txt
+	(2) pass1Code2.txt
+	(3) EXIT
+	YOUR CHOICE : 2
+
+	START 101
+
+	READ X
+
+	READ Y
+
+	MOVER AREG X
+
+	ADD AREG Y
+
+	MOVEM AREG RESULT
+
+	PRINT RESULT
+
+	ORIGIN 1200
+
+	STOP
+
+	X DS 1
+
+	Y DS 1
+
+	RESULT DS 1
+
+	END
+
+	=====================================
+		RESULT
+	=====================================
+	-	(AD, 01)	-	(C, 101)
+	105	(AD, 01)		
+	101	(IS, 09)	(S, 4)	(S, 0)
+	102	(IS, 09)	(S, 5)	(S, 1)
+	103	(IS, 04)	(r, 01)	(S, 4)
+	104	(IS, 01)	(r, 01)	(S, 5)
+	105	(IS, 05)	(r, 01)	(S, 6)
+	106	(IS, 10)	(S, 6)	
+	107	(AD, 02)	(C, 1200)	
+	1200	(IS, 00)		
+	1201	(S, 4)	(DL, 02)	(C, 1)
+	1202	(S, 5)	(DL, 02)	(C, 1)
+	1203	(S, 6)	(DL, 02)	(C, 1)
+	1204	(AD, 04)		
+
+	=====================================
+
+		SYMBOL TABLE
+	=====================================
+	0	A
+	1	XYZ
+	2	C
+	3	B
+	4	X
+	5	Y
+	6	RESULT
+
+	=====================================
+
+		LITERAL TABLE
+	=====================================
+
+	=====================================
+
+	CHOOSE FILENAME : 
+	(1) pass1Code1.txt
+	(2) pass1Code2.txt
+	(3) EXIT
+	YOUR CHOICE : 3
+sakshee@sakshee-Vostro-3580:~/TE Sem 2/SL5$

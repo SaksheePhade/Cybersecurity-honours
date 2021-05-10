@@ -1,0 +1,55 @@
+sakshee@sakshee-Vostro-3580:~/TE Sem 2/DAA$ ./a.out
+
+
+	PASS : 0
+	[1000, 11, 445, 1, 330, 3000, ]
+
+	PASS : 1
+	[1000, 11, 445, ]
+
+	PASS : 2
+	[1000, 11, ]
+	MIN MAX : 11 1000
+
+
+	PASS : 3
+	[445, ]
+	MIN MAX : 445 445
+
+	LEFT LIST JOINING : 11 1000
+
+	RIGHT LIST JOINING : 445 445
+
+	MIN MAX : 11 1000
+
+
+	PASS : 4
+	[1, 330, 3000, ]
+
+	PASS : 5
+	[1, 330, ]
+	MIN MAX : 1 330
+
+
+	PASS : 6
+	[3000, ]
+	MIN MAX : 3000 3000
+
+	LEFT LIST JOINING : 1 330
+
+	RIGHT LIST JOINING : 3000 3000
+
+	MIN MAX : 1 3000
+
+	LEFT LIST JOINING : 1 3000
+
+	RIGHT LIST JOINING : 1 3000
+
+	MIN MAX : 1 3000
+
+	Minimum element is 1
+
+	Maximum element is 3000
+sakshee@sakshee-Vostro-3580:~/TE Sem 2/DAA$ B
+
+
